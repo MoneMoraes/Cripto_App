@@ -3,8 +3,9 @@ import { createBrowserRouter } from "react-router-dom";
 
 import { Home } from "./pages/home";
 import { Detail } from "./pages/detail";
-import { Notfound } from "./pages/notfound";
 import { Layout } from "./components/layout";
+
+import { Notfound } from "./pages/notfound";
 
 const router = createBrowserRouter ([
     {   
@@ -15,7 +16,7 @@ const router = createBrowserRouter ([
                 element: <Home/>
             },
             {
-                path:"/detail:cripto",
+                path:"/detail/:cripto",
                 element: <Detail/>
             },
             {
